@@ -6,6 +6,7 @@ import br.inatel.labs.labjpa.entity.Fornecedor;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
+
 @Service
 @Transactional
 public class FornecedorService {

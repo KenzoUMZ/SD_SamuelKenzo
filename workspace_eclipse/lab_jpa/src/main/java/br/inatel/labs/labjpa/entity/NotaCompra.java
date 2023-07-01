@@ -1,6 +1,7 @@
 package br.inatel.labs.labjpa.entity;
 import java.util.List;
 import java.util.Objects;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,9 +10,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
+
 import java.time.LocalDate;
 import java.math.BigDecimal;
-
 
 
 @Entity
@@ -32,7 +33,7 @@ public class NotaCompra {
 	private LocalDate dataEmissao;
 	
 	
-	//CONSTRUTORES...
+	
 	public NotaCompra() {
 		
 	}
@@ -44,7 +45,7 @@ public class NotaCompra {
 	}
 
 	
-	//DEMAIS MÉTODOS...
+	
 	public BigDecimal getCalculoTotalNota() {
 		BigDecimal total = this.listaNotaCompraItem.stream()
 				.map(i -> i.getCalculoTotalItem())

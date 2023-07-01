@@ -16,8 +16,6 @@ import br.inatel.labs.labjpa.service.NotaCompraService;
 import br.inatel.labs.labjpa.service.ProdutoService;
 
 
-
-//@SpringBootTest
 class DataLoader {
 
 	
@@ -31,10 +29,9 @@ class DataLoader {
 	private NotaCompraService notaCompraService;
 	
 	
-	//@Test
+	
 	void load() {
 		
-		//1. Produto
 		Produto p1 = new Produto("Furadeira");
 		Produto p2 = new Produto("Lixadeira");
 		Produto p3 = new Produto("Plaina");
@@ -52,7 +49,7 @@ class DataLoader {
 		
 		
 		
-		//2. Fornecedor
+		
 		Fornecedor f1 = new Fornecedor("Gasômetro Madeiras");
 		Fornecedor f2 = new Fornecedor("Loja do Mecânico");
 
@@ -64,7 +61,7 @@ class DataLoader {
 		
 		
 		
-		//3. Nota Compra
+	
 		NotaCompra nc1 = new NotaCompra( LocalDate.of(2021, 1, 15), f1);
 		nc1 = notaCompraService.salvarNotaCompra(nc1);
 
@@ -75,7 +72,7 @@ class DataLoader {
 
 		
 		
-		//4. Nota Compra Item
+	
 		NotaCompraItem i1_1 = new NotaCompraItem(nc1, p1, new BigDecimal("300.00"), 2);
 		NotaCompraItem i1_2 = new NotaCompraItem(nc1, p2, new BigDecimal("1000.00"), 1);
 		NotaCompraItem i1_3 = new NotaCompraItem(nc1, p3, new BigDecimal("500.00"), 3);

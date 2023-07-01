@@ -1,11 +1,15 @@
 package br.inatel.labs.labjpa.service;
 import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import br.inatel.labs.labjpa.entity.NotaCompra;
 import br.inatel.labs.labjpa.entity.NotaCompraItem;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+
+ * @ 01.04.2023
+ */
 
 @Service
 @Transactional
@@ -15,7 +19,7 @@ public class NotaCompraService {
 	@PersistenceContext
 	private EntityManager em;
 	
-	//NotaCompra
+
 	public NotaCompra salvarNotaCompra(NotaCompra nc) {
 		return em.merge(nc);
 	}
@@ -24,13 +28,21 @@ public class NotaCompraService {
 		return em.find(NotaCompra.class, id);
 	}
 	
+	
+	public NotaCompra buscarNotaCompraPeloIdComListaItem(Long id) {
+		NotaCompra notaCompra = em.find(NotaCompra.class, id);
+		notaCompra.getListaNotaCompraItem().size();
+		return notaCompra;
+	}
+	
+	
 	public List<NotaCompra> listarNotaCompra(){
 		return em.createQuery("select nc from NotaCompra nc", NotaCompra.class)
 				.getResultList();
 	}
 	
 	
-	//NotaCompraItem
+
 	public NotaCompraItem salvarNotaCompraItem(NotaCompraItem item) {
 		return em.merge(item);
 	}
