@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import br.inatel.labs.labjpa.service.RelatorioService;
 
 
+
 @SpringBootTest
 public class RelatorioServiceTest {
 

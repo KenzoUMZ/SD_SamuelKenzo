@@ -4,6 +4,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import br.inatel.labs.labrest.client.model.dto.ProdutoDTO;
 
 
+
 public class WebClientPostProduto {
 
 	public static void main(String[] args) {

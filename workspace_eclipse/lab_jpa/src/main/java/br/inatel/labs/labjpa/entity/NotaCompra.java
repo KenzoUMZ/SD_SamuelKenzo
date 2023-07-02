@@ -15,6 +15,7 @@ import java.time.LocalDate;
 import java.math.BigDecimal;
 
 
+
 @Entity
 public class NotaCompra {
 
@@ -45,7 +46,7 @@ public class NotaCompra {
 	}
 
 	
-	
+
 	public BigDecimal getCalculoTotalNota() {
 		BigDecimal total = this.listaNotaCompraItem.stream()
 				.map(i -> i.getCalculoTotalItem())

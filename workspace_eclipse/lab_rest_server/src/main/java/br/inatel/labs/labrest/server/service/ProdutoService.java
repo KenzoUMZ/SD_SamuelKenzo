@@ -10,9 +10,6 @@ import org.springframework.stereotype.Service;
 import br.inatel.labs.labrest.server.model.Produto;
 import jakarta.annotation.PostConstruct;
 
- * @ 06.05.2023
- */
-
 
 @Service
 public class ProdutoService {

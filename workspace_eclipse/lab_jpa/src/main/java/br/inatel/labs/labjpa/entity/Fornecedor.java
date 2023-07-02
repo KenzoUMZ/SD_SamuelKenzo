@@ -10,7 +10,8 @@ import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
- 
+
+
 @Entity
 public class Fornecedor {
 
@@ -27,7 +28,7 @@ public class Fornecedor {
 	private String razaoSocial;
 
 
-	
+
 	
 	public Fornecedor() {
 		super();
@@ -40,7 +41,7 @@ public class Fornecedor {
 	}
 
 	
-	
+
 	public Long getId() {
 		return id;
 	}

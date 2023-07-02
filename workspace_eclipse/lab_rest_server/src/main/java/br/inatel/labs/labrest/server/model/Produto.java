@@ -3,9 +3,6 @@ package br.inatel.labs.labrest.server.model;
 import java.math.BigDecimal;
 import java.util.Objects;
 
- * @ 06.05.2023
- */
-
 public class Produto {
 
 	private Long id;

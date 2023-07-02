@@ -7,6 +7,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
 
+
 @Service
 @Transactional
 public class ProdutoService {

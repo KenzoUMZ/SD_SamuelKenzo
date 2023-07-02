@@ -8,8 +8,7 @@ import br.inatel.labs.labjpa.entity.NotaCompraItem;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
- * @ 01.04.2023
- */
+
 
 @Service
 @Transactional
@@ -19,7 +18,6 @@ public class NotaCompraService {
 	@PersistenceContext
 	private EntityManager em;
 	
-
 	public NotaCompra salvarNotaCompra(NotaCompra nc) {
 		return em.merge(nc);
 	}
@@ -42,7 +40,7 @@ public class NotaCompraService {
 	}
 	
 	
-
+	
 	public NotaCompraItem salvarNotaCompraItem(NotaCompraItem item) {
 		return em.merge(item);
 	}

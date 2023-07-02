@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import br.inatel.labs.labrest.server.service.ProdutoService;
 import br.inatel.labs.labrest.server.model.Produto;
 
- * @ 06.05.2023
- */
 
 @CrossOrigin("*")
 @RestController

@@ -48,7 +48,6 @@ public class NotaCompraItem {
 	}
 
 	
-	
 	public BigDecimal getCalculoTotalItem() {
 		return valorCompraProduto.multiply(BigDecimal.valueOf(quantidade));
 	}

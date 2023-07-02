@@ -21,9 +21,9 @@ class ProdutoControllerTest {
 		.uri("/produto")
 		.exchange()
 		.expectStatus()
-			.isOk()
+			.isOk() //status is OK?
 		.expectBody()
-			.returnResult() 
+			.returnResult() //retornou resultado?
 		;
 	}
 

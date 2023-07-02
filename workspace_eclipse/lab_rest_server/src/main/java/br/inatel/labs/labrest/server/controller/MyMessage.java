@@ -1,7 +1,6 @@
 package br.inatel.labs.labrest.server.controller;
 
- * @ 06.05.2023
- */
+
 
 public class MyMessage {
 

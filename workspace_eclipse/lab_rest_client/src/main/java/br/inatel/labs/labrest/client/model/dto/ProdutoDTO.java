@@ -3,6 +3,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 
+
 public class ProdutoDTO {
 
 	private Long id;
